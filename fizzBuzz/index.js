@@ -5,14 +5,17 @@
 
 for(i=1; i<101; i++){
   
+  var multipleOfThree = i % 3 === 0;
+  var multipleOfFive = i % 5 === 0; 
+
   // if i is divisible by 3 & 5 (MUST BE FIRST)
-  if (i%3 ===0 && i%5 === 0){
+  if (multipleOfThree && multipleOfFive){
     console.log('fizzBuzz')
   }//divisible by 3
-  else if(i%3 === 0){
+  else if(multipleOfThree){
     console.log('fizz');
   }//divisible by 5
-   else if (i%5 === 0){
+   else if (multipleOfFive){
     console.log('buzz');
   }  //clg the rest of the numbers
   else {
